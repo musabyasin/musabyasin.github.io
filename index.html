@@ -7,104 +7,119 @@
     <title>My page</title>
     <style>
       * {
-        line-height: 1.5;
+        line-height: 2;
+      }
+      li {
+        width: 50ch;
+        list-style-type: none;
       }
     </style>
   </head>
   <body>
     <h1>Bookmarks:</h1>
-    <ul>
-      <li>
-        <a href="https://www.youtube.com/watch?v=I-yT2Err6PE" target="_blank"
-          >Github page setup</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://www.youtube.com/watch?v=E1jlxvt8eDY&list=PLGs0VKk2DiYzguDvh5xk2XoX9V1VKP5Hv&index=3"
-          target="_blank"
-          >paul python series</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://webmail.citytech.cuny.edu/owa/#path=/mail"
-          target="_blank"
-          >City Tech email</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://www.youtube.com/watch?v=nykOeWgQcHM&list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA"
-          target="_blank"
-          >MIT python</a
-        >
-      </li>
-      <li>
-        <a href="https://www.youtube.com/watch?v=xLovcfIugy8" target="_blank"
-          >From java 2 Python</a
-        >
-      </li>
-      <li>
-        <a href="https://zoom.us/" target="_blank">Zoom: musabsamarrai</a>
-      </li>
-      <li>
-        <a href="https://libgen.rs/" target="_blank">Library Genesis</a>
-      </li>
-      <li>
-        <a href="https://tafsir.app/?utm_source=pocket_mylist" target="_blank"
-          >الباحث القرآني</a
-        >
-      </li>
-      <li>
-        <a href="https://www.youtube.com/" target="_blank">Youtube</a>
-      </li>
-      <li>
-        <a
-          href="https://www.w3schools.com/?utm_source=pocket_mylist"
-          target="_blank"
-          >W3 School</a
-        >
-      </li>
-      <li>
-        <a href="http://www.cuny.edu/?utm_source=pocket_mylist" target="_blank"
-          >CUNY</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://www.yahoo.com/?utm_source=pocket_mylist"
-          target="_blank"
-          >Yahoo</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://mail.google.com/mail/u/0/?tab=rm&utm_source=pocket_mylist#inbox"
-          target="_blank"
-          >GMAIL</a
-        >
-      </li>
-      <li>
-        <a href="https://dictation.io/speech" target="_blank">ٍSpeech 2 Text</a>
-      </li>
-      <li>
-        <a href="https://www.ilovepdf.com/" target="_blank"
-          >Documents Conversions</a
-        >
-      </li>
-      <li>
-        <a href="" target="_blank"></a>
-      </li>
-      <li>
-        <a href="" target="_blank"></a>
-      </li>
-      <li>
-        <a href="" target="_blank"></a>
-      </li>
-      <li>
-        <a href="" target="_blank"></a>
-      </li>
-    </ul>
+    <ul id="ul"></ul>
+    <script>
+      const links1 = `[
+      {
+      "text": "City Tech email",
+      "link": "https://webmail.citytech.cuny.edu/owa/#path=/mail",
+      "color":"hsl(271,70%,75%"
+    },
+    {
+      "text": "CUNY",
+      "link": "http://www.cuny.edu/",
+      "color":"hsl(271,70%,75%"
+    },
+    {
+      "text": "الباحث القرآني",
+      "link": "https://tafsir.app",
+      "color":"hsl(155, 33%, 90%)"
+    },
+    {
+      "text": "Github page setup",
+      "link": "https://www.youtube.com/watch?v=I-yT2Err6PE"
+    },
+    {
+      "text": "Paul python series",
+      "link": "https://www.youtube.com/watch?v=E1jlxvt8eDY&list=PLGs0VKk2DiYzguDvh5xk2XoX9V1VKP5Hv&index=3"
+    },
+   
+    {
+      "text": "MIT python",
+      "link": "https://www.youtube.com/watch?v=nykOeWgQcHM&list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA"
+    },
+    {
+      "text": "From java 2 Python",
+      "link": "https://www.youtube.com/watch?v=xLovcfIugy8 ="
+    },
+    {
+      "text": "Zoom: musabsamarrai",
+      "link": "http://www.zoom.com"
+    },
+    {
+      "text": "Library Genesis",
+      "link": "https://libgen.rs/"
+    },
+    
+    {
+      "text": "You Tube",
+      "link": "https://www.youtube.com/"
+    },
+    {
+      "text": "W3 School",
+      "link": "https://www.w3schools.com"
+    },
+   
+    {
+      "text": "Yahoo",
+      "link": "https://www.yahoo.com/"
+    },
+    {
+      "text": "GMAIL",
+      "link": "https://mail.google.com"
+    },
+    {
+      "text": "Speech 2 Text",
+      "link": "https://dictation.io/speech"
+    },
+    {
+      "text": "Documents Conversation",
+      "link": "https://www.ilovepdf.com/"
+    }
+  ]`;
+
+      const bookmark = function (link, text, color = "white") {
+        const p = document.createElement("LI");
+        p.style.backgroundColor = color;
+        const link1 = document.createElement("A");
+        link1.href = link;
+        link1.text = text;
+        link1.target = "_blank";
+        p.appendChild(link1);
+        document.getElementById("ul").appendChild(p);
+        // createElemet, appendChild, innertext, innerHTML
+      };
+
+      /*   fetch("data.json")
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (data) {
+          appendData(data);
+        })
+        .catch(function (err) {
+          console.log("error: " + err);
+        });
+
+      function appendData(data) {
+        for (const e of data) {
+          bookmark(e["link"], e["text"]);
+        }
+      } */
+      const data = JSON.parse(links1);
+      for (const e of data) {
+        bookmark(e["link"], e["text"], e["color"]);
+      }
+    </script>
   </body>
 </html>
