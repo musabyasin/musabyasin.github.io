@@ -1,4 +1,19 @@
 [
+  {
+    "text": "CUNY",
+    "link": "http://www.cuny.edu/",
+    "color":"hsl(271,70%,75%"
+  },
+  {
+    "text": "City Tech email",
+    "link": "https://webmail.citytech.cuny.edu/owa/#path=/mail",
+    "color":"hsl(271,70%,75%"
+  },
+  {
+    "text": "الباحث القرآني",
+    "link": "https://tafsir.app",
+    "color":"hsl(155, 33%, 90%)"
+  },
     {
       "text": "Github page setup",
       "link": "https://www.youtube.com/watch?v=I-yT2Err6PE"
@@ -7,10 +22,7 @@
       "text": "Paul python series",
       "link": "https://www.youtube.com/watch?v=E1jlxvt8eDY&list=PLGs0VKk2DiYzguDvh5xk2XoX9V1VKP5Hv&index=3"
     },
-    {
-      "text": "City Tech email",
-      "link": "https://webmail.citytech.cuny.edu/owa/#path=/mail"
-    },
+ 
     {
       "text": "MIT python",
       "link": "https://www.youtube.com/watch?v=nykOeWgQcHM&list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA"
@@ -27,10 +39,7 @@
       "text": "Library Genesis",
       "link": "https://libgen.rs/"
     },
-    {
-      "text": "الباحث القرآني",
-      "link": "https://tafsir.app"
-    },
+ 
     {
       "text": "You Tube",
       "link": "https://www.youtube.com/"
@@ -39,10 +48,7 @@
       "text": "W3 School",
       "link": "https://www.w3schools.com"
     },
-    {
-      "text": "CUNY",
-      "link": "http://www.cuny.edu/"
-    },
+  
     {
       "text": "Yahoo",
       "link": "https://www.yahoo.com/"
