@@ -67,6 +67,7 @@
     },
     {
       "text": "موسوعة رواة الحديث",
-      "link": "http://hadithtransmitters.hawramani.com/"
+      "link": "http://hadithtransmitters.hawramani.com/",
+      "color":"hsl(155, 33%, 90%)"
     }
   ]
