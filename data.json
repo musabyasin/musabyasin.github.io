@@ -2,7 +2,12 @@
   {
     "text": "CUNY",
     "link": "http://www.cuny.edu/",
-    "color":"hsl(271,70%,75%"
+    "color":"hsl(271,70%,75%)"
+  },  
+  {
+    "text": "CUNY Zoom",
+    "link": "https://cuny.zoom.us/,
+    "color":"hsl(271,70%,75%)"
   },
   {
     "text": "City Tech email",
