@@ -74,5 +74,11 @@
       "text": "موسوعة رواة الحديث",
       "link": "http://hadithtransmitters.hawramani.com/",
       "color":"hsl(155, 33%, 90%)"
+    },
+  
+  {
+      "text": "الترجمة الروسية",
+      "link": "https://translate.yandex.com/",
+      "color":"hsl(155, 33%, 90%)"
     }
   ]
