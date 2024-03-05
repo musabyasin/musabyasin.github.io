@@ -79,5 +79,23 @@
   {
       "text": "الترجمة الروسية",
       "link": "https://translate.yandex.com/"
+    },
+  {
+      "text": "Polly",
+      "link": "https://us-east-1.console.aws.amazon.com/polly/home/"
+    },
+  {
+      "text": "Amazon Transcibe",
+      "link": "https://us-east-1.console.aws.amazon.com/transcribe/home?region=us-east-1#welcome"
+    },
+   {
+      "text": "Chat GPT",
+      "link": "https://chat.openai.com/"
+    },
+  {
+      "text": "Google Gemini",
+      "link": "https://gemini.google.com/app"
     }
+ 
+  
   ]
