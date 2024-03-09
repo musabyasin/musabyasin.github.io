@@ -9,15 +9,25 @@
       * {
         line-height: 2;
       }
-      li {
-        width: 50ch;
-        list-style-type: none;
+      #container {
+        display: grid;
+  column-gap: 50px;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+      }
+      #item{
+        background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
       }
     </style>
   </head>
   <body>
     <h1>Bookmarks:</h1>
-    <ul id="ul"></ul>
+    <div id="container"></div>
     <script>
       /*
          const links1 = `[
@@ -90,14 +100,14 @@
         ]`;
       */
       const bookmark = function (link, text, color = "white") {
-        const p = document.createElement("LI");
+        const p = document.createElement("item");
         p.style.backgroundColor = color;
         const link1 = document.createElement("A");
         link1.href = link;
         link1.text = text;
         link1.target = "_blank";
         p.appendChild(link1);
-        document.getElementById("ul").appendChild(p);
+        document.getElementById("container").appendChild(p);
         // createElemet, appendChild, innertext, innerHTML
       };
 
