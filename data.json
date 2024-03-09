@@ -19,6 +19,11 @@
     "link": "https://tafsir.app",
     "color":"hsl(155, 33%, 90%)"
   },
+     {
+      "text": "موسوعة رواة الحديث",
+      "link": "http://hadithtransmitters.hawramani.com/",
+      "color":"hsl(155, 33%, 90%)"
+    },
     {
       "text": "Github page setup",
       "link": "https://www.youtube.com/watch?v=I-yT2Err6PE"
@@ -70,11 +75,7 @@
       "text": "Documents Conversation",
       "link": "https://www.ilovepdf.com/"
     },
-    {
-      "text": "موسوعة رواة الحديث",
-      "link": "http://hadithtransmitters.hawramani.com/",
-      "color":"hsl(155, 33%, 90%)"
-    },
+ 
   
   {
       "text": "الترجمة الروسية",
