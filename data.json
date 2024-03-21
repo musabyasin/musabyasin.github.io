@@ -32,7 +32,6 @@
       "text": "Paul python series",
       "link": "https://www.youtube.com/watch?v=E1jlxvt8eDY&list=PLGs0VKk2DiYzguDvh5xk2XoX9V1VKP5Hv&index=3"
     },
- 
     {
       "text": "MIT python",
       "link": "https://www.youtube.com/watch?v=nykOeWgQcHM&list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA"
@@ -49,7 +48,6 @@
       "text": "Library Genesis",
       "link": "https://libgen.rs/"
     },
- 
     {
       "text": "You Tube",
       "link": "https://www.youtube.com/"
@@ -74,9 +72,7 @@
     {
       "text": "Documents Conversation",
       "link": "https://www.ilovepdf.com/"
-    },
- 
-  
+    },  
   {
       "text": "الترجمة الروسية",
       "link": "https://translate.yandex.com/"
@@ -96,13 +92,10 @@
   {
       "text": "Google Gemini",
       "link": "https://gemini.google.com/app"
-    },
-  
+    }, 
    {
       "text": "Investor Observer",
       "link": "https://www.investorsobserver.com/"
       "color":"hsl(120,70%,75%)"
-    }
- 
-  
+    } 
   ]
