@@ -96,6 +96,12 @@
   {
       "text": "Google Gemini",
       "link": "https://gemini.google.com/app"
+    },
+  
+   {
+      "text": "Investor Observer",
+      "link": "https://www.investorsobserver.com/"
+      "color":"hsl(120,70%,75%)"
     }
  
   
