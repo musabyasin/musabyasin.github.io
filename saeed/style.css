@@ -1,0 +1,22 @@
+* {
+  border1: solid 1px red;
+}
+.header {
+  text-align: center;
+  color: rgba(36, 22, 117, 0.774);
+  font-size: 6vh;
+  margin: 5vh 0;
+}
+.wrapper {
+  text-align: center;
+  margin: 5vh 0;
+}
+.img {
+  height: 90vh;
+}
+.slider {
+  width: 80%;
+}
+.slider-wrapper {
+  text-align: center;
+}
