@@ -2,116 +2,96 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Image Slider</title>
-    <style>
-        body{
-            display: grid;
-            height: 100vh;
-            width: 100vw;
-            background:hsla(240,80%,99%,.95);
-        }
-        #wrapper{
-            width:80vw;
-            height:80vh;
-            border: 5px solid hsla(240,10%,50%,.4);
-            margin: auto;
-        }
-        .img{
-            max-height: 100%;
-            max-width: 100%;
-            display:block;
-            margin:auto;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Image Slider</title>
+  <style>
+  </style>
 </head>
-
 <body>
-    <!-- <h1 class="header">Image Slider</h1> -->
-    <div class="wrapper" id="wrapper">
-        <img class="img" id="img" src="4.jpg">
-    </div>
-    <div class="slider-wrapper">
-        5 sec
-        <input type="range" id="slider" class="slider" min="0" max="4600" value="50" step="1">
-        .4 sec
-    </div>
-    <!--
-    <div><input type="file" id="chosen" multiple></div>
-    -->
-</body>
-<script>
-    const img = document.getElementById("img");
+  <div class="wrapper" id="wrapper">
+    <img class="img" id="img" src="0.jpg">
+  </div>
+  <div class="slider-wrapper">
+    <input type="range" id="slider" class="slider" min="100" max="3000" value="1500" step="50">
+  </div>
+  <script>
+    let t,start;
+    const imageElement = document.getElementById("img");
     const slider = document.getElementById("slider");
-    const fileList = document.getElementById("chosen");
-    const wrapper= document.getElementById("wrapper");
-    //const btn = document.getElementById("btn")
-    var timer, isPaused = true;// images;
-    /*fileList.onchange = function () {
-        images = Array.from(fileList.files);
-        isPaused = false;}*/
+    const wrapper = document.getElementById("wrapper");
+    let currentImageIndex = 0;
+    let isPlaying = false;
+    let imagePaths = []; 
 
-    //const images = ["1.jpg", "2.jpg", "3.jpg", "4.jpg"]
-    const images=[];
-    for(let i=0;i<317;i++){
-       images[i]=i+".jpg"
-    
-    }
-    let i = 0;
-    let f = function () {
-        if (!isPaused) {
-            img.src = images[i];
-            i = (i + 1) % images.length;
-        }
-        //console.log(i+"----")
+    function changeImage() {
+      if (!isPlaying) {
+        imageElement.src = imagePaths[currentImageIndex];;
+      }else{
+      imageElement.src = imagePaths[currentImageIndex];
+      currentImageIndex = (currentImageIndex + 1) % imagePaths.length;
+      animationFrameId = requestAnimationFrame(animateOpacity); 
+      }
     }
 
-    let speed = function (x) {
-
-        let y = 0;
-        y = 5000 - x
-        return y;
+    function animateOpacity( t1) {
+      if (!isPlaying) return;      
+      if (start === undefined) {
+        start = t1;
+      }
+      t=t1;
+      if(t-start >speed){
+        currentImageIndex = (currentImageIndex + 1) % imagePaths.length;
+        imageElement.src=imagePaths[currentImageIndex]
+        start=t1
+      }    
+      requestAnimationFrame(animateOpacity);
     }
+    function setSpeed() {
+      speed = 3100-slider.value;
+    }
+
+    function startSlideShow() {
+      isPlaying = true;
+      changeImage()   
+    }
+
+    function stopSlideShow() {
+      isPlaying = false;
+    }
+
     window.onload = function () {
-        timer = setInterval(f, speed(slider.value));
-    }
-    slider.onchange = function () {
-        isPaused = false;
-        console.log("speed change :" + slider.value + " : " +
-            speed(slider.value))
-        clearInterval(timer);
-        timer = setInterval(f, speed(slider.value));
-    }
-    
-    wrapper.onclick = function () {
-        console.log("Clicked")
-        if (isPaused) {
-            isPaused = false;
-            //img.style.visibility = "visible";
-            //img.src=i+".jpg"
-            console.log("Button mouseDown fired")
-            clearInterval(timer);
-        }
-        else {
-            isPaused = true;
-            //img.style.visibility = "hidden";
-            img.src=i+".jpg"
-            console.log("Button mouseDown fired")
-            timer = setInterval(f, speed(slider.value));
-        }
-        wrapper.onwheel= function (event) {
-            let y= event.deltaY
-            console.log(y+"----"+i);
-            if(y>0&& i>1)img.src=--i +".jpg";
-            if(y<0&& i<images.length-1)img.src=++i +".jpg";
-            
-        }
-    }
-   
+      for(let i=0;i<316;i++){
+        imagePaths[i]=i+".jpg"
+      }
+      speed=slider.vlue
+      startSlideShow();
+    };
 
-</script>
+    slider.onchange = function () {
+      setSpeed()
+    };
+
+    wrapper.onclick = function () {
+      if (isPlaying) {
+        stopSlideShow();
+      } else {
+        startSlideShow();
+      }
+    };
+
+    wrapper.onwheel = function (event) {
+        event.preventDefault();
+      const deltaY = event.deltaY;
+      if (deltaY > 0 && currentImageIndex > 0) {
+        currentImageIndex--;
+      } else if (deltaY < 0 && currentImageIndex < imagePaths.length - 1) {
+        currentImageIndex++;
+      }
+      changeImage();
+    };
+  </script>
 
 </html>
