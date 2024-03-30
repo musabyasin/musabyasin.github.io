@@ -1,1 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Image Slider</title>
+  <style>
+    body {
+      display: grid;
+      height: 100vh;
+      width: 100vw;
+      background: hsla(240, 10%, 99%, 0.9);
+    }
+
+    #wrapper {
+      width: 80vw;
+      height: 80vh;
+      border: 5px solid hsla(240, 10%, 50%, 0.4);
+      margin:2rem  auto;
+      position: relative; /* For better image positioning */
+    }
+
+    .img {
+      max-height: 100%;
+      max-width: 100%;
+      position: absolute; /* Center image within wrapper */
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); /* Center image using transform */
+    }
+
+    .slider-wrapper {
+      display: flex; /* Align slider elements horizontally */
+      justify-content: space-between; /* Space slider elements evenly */
+      margin: 10px auto;
+    }
+
+    .slider-wrapper span {
+      font-size: 14px;
+      margin: 3rem 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper" id="wrapper">
+    <img class="img" id="img" src="4.jpg">
+  </div>
+
+  <div class="slider-wrapper">
+    <span>5 sec</span>
+    <input type="range" id="slider" class="slider" min="0" max="4600" value="50" step="1">
+    <span>.4 sec</span>
+  </div>
+  <script>
+    const img = document.getElementById("img");
+    const slider = document.getElementById("slider");
+
+    let images = [];
+    // Assuming images are in the same directory as HTML
+    for (let i = 1; i < 307; i++) {
+      images.push(i + ".jpg");
+    }
+
+    let i = 0;
+    let isPaused = true;
+
+    function showImage() {
+      if (!isPaused) {
+        img.src = images[i];
+        i = (i + 1) % images.length;
+      }
+    }
+
+    function updateInterval() {
+      clearInterval(timer); // Clear previous interval
+      const speed = 5000 - slider.value; // Calculate interval based on slider value
+      timer = setInterval(showImage, speed);
+    }
+
+    window.onload = function () {
+      timer = setInterval(showImage, 5000); // Start with default interval
+    };
+
+    slider.onchange = function () {
+      isPaused = false; // Resume on slider change
+      updateInterval();
+      console.log("Speed changed:", slider.value, ":", 5000 - slider.value);
+    };
+
+    const wrapper = document.getElementById("wrapper");
+    wrapper.onclick = function () {
+      isPaused = !isPaused;
+      if (isPaused) {
+        clearInterval(timer);
+        console.log("Paused");
+      } else {
+        updateInterval();
+        console.log("Resumed");
+      }
+    };
+
+    // Mousewheel event for manual image change (optional)
+    wrapper.onwheel = function (event) {
+      const deltaY = event.deltaY;
+      if (deltaY > 0 && i > 0) {
+        i--;
+        img.src = images[i];
+      } else if (deltaY < 0 && i < images.length - 1) {
+        i++;
+        img.src = images[i];
+      }
+    };
+  </script>
+</html>
