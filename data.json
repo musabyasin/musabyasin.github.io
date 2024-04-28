@@ -102,5 +102,22 @@
       "text": "Nasdaq",
       "link": "https://www.nasdaq.com/",
       "color":"hsl(120,70%,75%)"
-    }
+    },
+  {
+    "text": "facebook",
+    "link": "https://www.facebook.com/",
+  }, 
+  {
+    "text": "Youtube",
+    "link": "https://twitter.com/home?lang=en",
+  },
+  {
+    "text": "RT Arabic",
+    "link": "https://arabic.rt.com/",
+  },
+   {
+    "text": "ChatGPT",
+    "link": "https://chat.openai.com/",
+  },
+  
   ]
