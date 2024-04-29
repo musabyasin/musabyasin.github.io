@@ -105,23 +105,22 @@
     },
   {
     "text": "facebook",
-    "link": "https://www.facebook.com/",
+    "link": "https://www.facebook.com/"
   }, 
   {
     "text": "Youtube",
-    "link": "https://twitter.com/home?lang=en",
+    "link": "https://twitter.com/home?lang=en"
   },
   {
     "text": "RT Arabic",
-    "link": "https://arabic.rt.com/",
+    "link": "https://arabic.rt.com/"
   },
    {
     "text": "ChatGPT",
-    "link": "https://chat.openai.com/",
+    "link": "https://chat.openai.com/"
   },
   {
     "text": "Zoom",
     "link": "https://zoom.us/profile#/login"
-  },
-  
+  },  
   ]
