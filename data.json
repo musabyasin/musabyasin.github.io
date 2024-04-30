@@ -1,126 +1,126 @@
 [
-  {
-    "text": "CUNY",
-    "link": "http://www.cuny.edu/",
-    "color":"hsl(271,70%,75%)"
-  },  
-  {
-    "text": "CUNY Zoom",
-    "link": "https://cuny.zoom.us/",
-    "color":"hsl(271,70%,75%)"
-  },
-  {
-    "text": "City Tech email",
-    "link": "https://webmail.citytech.cuny.edu/owa/#path=/mail",
-    "color":"hsl(271,70%,75%"
-  },
-  {
-    "text": "الباحث القرآني",
-    "link": "https://tafsir.app",
-    "color":"hsl(155, 33%, 90%)"
-  },
-     {
-      "text": "موسوعة رواة الحديث",
-      "link": "http://hadithtransmitters.hawramani.com/",
-      "color":"hsl(155, 33%, 90%)"
+    {
+        "text": "CUNY",
+        "link": "http://www.cuny.edu/",
+        "color": "hsl(271,70%,75%)"
     },
     {
-      "text": "Github page setup",
-      "link": "https://www.youtube.com/watch?v=I-yT2Err6PE"
+        "text": "CUNY Zoom",
+        "link": "https://cuny.zoom.us/",
+        "color": "hsl(271,70%,75%)"
     },
     {
-      "text": "Paul python series",
-      "link": "https://www.youtube.com/watch?v=E1jlxvt8eDY&list=PLGs0VKk2DiYzguDvh5xk2XoX9V1VKP5Hv&index=3"
+        "text": "City Tech email",
+        "link": "https://webmail.citytech.cuny.edu/owa/#path=/mail",
+        "color": "hsl(271,70%,75%"
     },
     {
-      "text": "MIT python",
-      "link": "https://www.youtube.com/watch?v=nykOeWgQcHM&list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA"
+        "text": "BMCC",
+        "link": "https://www.bmcc.cuny.edu/#",
+        "color": "hsl(271,70%,75%"
     },
     {
-      "text": "From java 2 Python",
-      "link": "https://www.youtube.com/watch?v=xLovcfIugy8 ="
+        "text": "الباحث القرآني",
+        "link": "https://tafsir.app",
+        "color": "hsl(155, 33%, 90%)"
     },
     {
-      "text": "Zoom: musabsamarrai",
-      "link": "http://www.zoom.com"
+        "text": "موسوعة رواة الحديث",
+        "link": "http://hadithtransmitters.hawramani.com/",
+        "color": "hsl(155, 33%, 90%)"
     },
     {
-      "text": "Library Genesis",
-      "link": "https://libgen.rs/"
+        "text": "Github page setup",
+        "link": "https://www.youtube.com/watch?v=I-yT2Err6PE"
     },
     {
-      "text": "You Tube",
-      "link": "https://www.youtube.com/"
+        "text": "Paul python series",
+        "link": "https://www.youtube.com/watch?v=E1jlxvt8eDY&list=PLGs0VKk2DiYzguDvh5xk2XoX9V1VKP5Hv&index=3"
     },
     {
-      "text": "W3 School",
-      "link": "https://www.w3schools.com"
-    },
-  
-    {
-      "text": "Yahoo",
-      "link": "https://www.yahoo.com/"
+        "text": "MIT python",
+        "link": "https://www.youtube.com/watch?v=nykOeWgQcHM&list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA"
     },
     {
-      "text": "GMAIL",
-      "link": "https://mail.google.com"
+        "text": "From java 2 Python",
+        "link": "https://www.youtube.com/watch?v=xLovcfIugy8 ="
     },
     {
-      "text": "Speech 2 Text",
-      "link": "https://dictation.io/speech"
+        "text": "Zoom: musabsamarrai",
+        "link": "http://www.zoom.com"
     },
     {
-      "text": "Documents Conversation",
-      "link": "https://www.ilovepdf.com/"
-    },  
-  {
-      "text": "الترجمة الروسية",
-      "link": "https://translate.yandex.com/"
+        "text": "Library Genesis",
+        "link": "https://libgen.rs/"
     },
-  {
-      "text": "Polly",
-      "link": "https://us-east-1.console.aws.amazon.com/polly/home/"
+    {
+        "text": "You Tube",
+        "link": "https://www.youtube.com/"
     },
-  {
-      "text": "Amazon Transcibe",
-      "link": "https://us-east-1.console.aws.amazon.com/transcribe/home?region=us-east-1#welcome"
+    {
+        "text": "W3 School",
+        "link": "https://www.w3schools.com"
     },
-   {
-      "text": "Chat GPT",
-      "link": "https://chat.openai.com/"
+    {
+        "text": "Yahoo",
+        "link": "https://www.yahoo.com/"
     },
-  {
-      "text": "Google Gemini",
-      "link": "https://gemini.google.com/app"
-    }, 
-   {
-      "text": "Investor Observer",
-      "link": "https://www.investorsobserver.com/",
-      "color":"hsl(120,70%,75%)"
+    {
+        "text": "GMAIL",
+        "link": "https://mail.google.com"
     },
-  {
-      "text": "Nasdaq",
-      "link": "https://www.nasdaq.com/",
-      "color":"hsl(120,70%,75%)"
+    {
+        "text": "Speech 2 Text",
+        "link": "https://dictation.io/speech"
     },
-  {
-    "text": "facebook",
-    "link": "https://www.facebook.com/"
-  }, 
-  {
-    "text": "Youtube",
-    "link": "https://twitter.com/home?lang=en"
-  },
-  {
-    "text": "RT Arabic",
-    "link": "https://arabic.rt.com/"
-  },
-   {
-    "text": "ChatGPT",
-    "link": "https://chat.openai.com/"
-  },
-  {
-    "text": "Zoom",
-    "link": "https://zoom.us/profile#/login"
-  }  
-  ]
+    {
+        "text": "Documents Conversation",
+        "link": "https://www.ilovepdf.com/"
+    },
+    {
+        "text": "الترجمة الروسية",
+        "link": "https://translate.yandex.com/"
+    },
+    {
+        "text": "Polly",
+        "link": "https://us-east-1.console.aws.amazon.com/polly/home/"
+    },
+    {
+        "text": "Amazon Transcibe",
+        "link": "https://us-east-1.console.aws.amazon.com/transcribe/home?region=us-east-1#welcome"
+    },
+    {
+        "text": "Chat GPT",
+        "link": "https://chat.openai.com/"
+    },
+    {
+        "text": "Google Gemini",
+        "link": "https://gemini.google.com/app"
+    },
+    {
+        "text": "Investor Observer",
+        "link": "https://www.investorsobserver.com/",
+        "color": "hsl(120,70%,75%)"
+    },
+    {
+        "text": "Nasdaq",
+        "link": "https://www.nasdaq.com/",
+        "color": "hsl(120,70%,75%)"
+    },
+    {
+        "text": "facebook",
+        "link": "https://www.facebook.com/"
+    },
+    {
+        "text": "Youtube",
+        "link": "https://twitter.com/home?lang=en"
+    },
+    {
+        "text": "RT Arabic",
+        "link": "https://arabic.rt.com/"
+    },
+    {
+        "text": "Zoom",
+        "link": "https://zoom.us/profile#/login"
+    }
+]
