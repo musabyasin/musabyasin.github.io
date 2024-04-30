@@ -20,16 +20,6 @@
         "color": "hsl(271,70%,75%"
     },
     {
-        "text": "الباحث القرآني",
-        "link": "https://tafsir.app",
-        "color": "hsl(155, 33%, 90%)"
-    },
-    {
-        "text": "موسوعة رواة الحديث",
-        "link": "http://hadithtransmitters.hawramani.com/",
-        "color": "hsl(155, 33%, 90%)"
-    },
-    {
         "text": "Github page setup",
         "link": "https://www.youtube.com/watch?v=I-yT2Err6PE"
     },
@@ -78,10 +68,6 @@
         "link": "https://www.ilovepdf.com/"
     },
     {
-        "text": "الترجمة الروسية",
-        "link": "https://translate.yandex.com/"
-    },
-    {
         "text": "Polly",
         "link": "https://us-east-1.console.aws.amazon.com/polly/home/"
     },
@@ -122,5 +108,23 @@
     {
         "text": "Zoom",
         "link": "https://zoom.us/profile#/login"
+    },
+    {
+        "text": "Minesweep",
+        "link": "https://minesweeper.online/"
+    },
+    {
+        "text": "الباحث القرآني",
+        "link": "https://tafsir.app",
+        "color": "hsl(155, 33%, 90%)"
+    },
+    {
+        "text": "موسوعة رواة الحديث",
+        "link": "http://hadithtransmitters.hawramani.com/",
+        "color": "hsl(155, 33%, 90%)"
+    },
+    {
+        "text": "الترجمة الروسية",
+        "link": "https://translate.yandex.com/"
     }
 ]
