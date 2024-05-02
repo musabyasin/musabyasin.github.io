@@ -1,5 +1,33 @@
 [
     {
+        "text": "facebook",
+        "link": "https://www.facebook.com/"
+    },
+    {
+        "text": "X-Twitter",
+        "link": "https://twitter.com/home?lang=en"
+    },
+     {
+        "text": "You Tube",
+        "link": "https://www.youtube.com/"
+    },
+     {
+        "text": "Yahoo",
+        "link": "https://www.yahoo.com/"
+    },
+     {
+        "text": "GMAIL",
+        "link": "https://mail.google.com"
+    },
+    {
+        "text": "RT Arabic",
+        "link": "https://arabic.rt.com/"
+    },
+    {
+        "text": "Minesweep",
+        "link": "https://minesweeper.online/"
+    },
+    {
         "text": "CUNY",
         "link": "http://www.cuny.edu/",
         "color": "hsl(271,70%,75%)"
@@ -43,21 +71,10 @@
         "text": "Library Genesis",
         "link": "https://libgen.rs/"
     },
-    {
-        "text": "You Tube",
-        "link": "https://www.youtube.com/"
-    },
+   
     {
         "text": "W3 School",
         "link": "https://www.w3schools.com"
-    },
-    {
-        "text": "Yahoo",
-        "link": "https://www.yahoo.com/"
-    },
-    {
-        "text": "GMAIL",
-        "link": "https://mail.google.com"
     },
     {
         "text": "Speech 2 Text",
@@ -94,24 +111,8 @@
         "color": "hsl(120,70%,75%)"
     },
     {
-        "text": "facebook",
-        "link": "https://www.facebook.com/"
-    },
-    {
-        "text": "X-Twitter",
-        "link": "https://twitter.com/home?lang=en"
-    },
-    {
-        "text": "RT Arabic",
-        "link": "https://arabic.rt.com/"
-    },
-    {
         "text": "Zoom",
         "link": "https://zoom.us/profile#/login"
-    },
-    {
-        "text": "Minesweep",
-        "link": "https://minesweeper.online/"
     },
     {
         "text": "الباحث القرآني",
